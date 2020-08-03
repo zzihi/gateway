@@ -54,7 +54,7 @@ spring:
         - id: Delivery
           uri: http://Delivery:8080
           predicates:
-            - Path=/deliveries/** 
+            - Path=/deliveries/**, /cancellations/**
         - id: Product
           uri: http://Product:8080
           predicates:
@@ -66,7 +66,7 @@ spring:
         - id: MyPage
           uri: http://MyPage:8080
           predicates:
-            - Path= /orderViews/**/salesViews/**
+            - Path= /orderViews/**, /salesViews/**
       globalcors:
         corsConfigurations:
           '[/**]':
