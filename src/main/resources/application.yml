@@ -8,23 +8,23 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: Order
+        - id: order
           uri: http://localhost:8081
           predicates:
             - Path=/orders/** 
-        - id: Delivery
+        - id: delivery
           uri: http://localhost:8082
           predicates:
             - Path=/deliveries/**, /cancellations/**
-        - id: Product
+        - id: product
           uri: http://localhost:8083
           predicates:
             - Path=/products/** 
-        - id: Purchase
+        - id: purchase
           uri: http://localhost:8084
           predicates:
             - Path=/purchases/** 
-        - id: MyPage
+        - id: mypage
           uri: http://localhost:8085
           predicates:
             - Path= /orderViews/**, /salesViews/**, /tbViews/**
@@ -55,23 +55,23 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: Order
+        - id: order
           uri: http://order:8080
           predicates:
             - Path=/orders/** 
-        - id: Delivery
+        - id: delivery
           uri: http://delivery:8080
           predicates:
             - Path=/deliveries/**, /cancellations/**
-        - id: Product
+        - id: product
           uri: http://product:8080
           predicates:
             - Path=/products/** 
-        - id: Purchase
+        - id: purchase
           uri: http://purchase:8080
           predicates:
             - Path=/purchases/** 
-        - id: MyPage
+        - id: mypage
           uri: http://mypage:8080
           predicates:
             - Path= /orderViews/**, /salesViews/**, /tbViews/**
