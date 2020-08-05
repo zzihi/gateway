@@ -76,11 +76,11 @@ spring:
           predicates:
             - Path= /orderViews/**, /salesViews/**, /tbViews/**
         - id: taegbae
-          uri: http://localhost:8080
+          uri: http://taegbae:8080
           predicates:
             - Path=/taegbaes/**
         - id: pay
-          uri: http://localhost:8080
+          uri: http://pay:8080
           predicates:
             - Path=/pays/**
       globalcors:
